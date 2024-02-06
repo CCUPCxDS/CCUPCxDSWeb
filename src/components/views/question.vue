@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div>
         <Navbar />
         <div class="container">
@@ -11,4 +11,4 @@
 <script setup>
 import Navbar from '../layout/navbar.vue';
 import Footer from '../layout/footer.vue';
-</script>
+</script> -->
