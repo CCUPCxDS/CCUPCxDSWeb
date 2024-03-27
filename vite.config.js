@@ -3,6 +3,11 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
-  base: '/CCUPCxDSWeb/'
+    plugins: [vue()],
+    resolve: {
+        alias: {
+            '@': '/src'
+        },
+    },
+
 })

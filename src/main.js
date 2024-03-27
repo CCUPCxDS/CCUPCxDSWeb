@@ -1,16 +1,19 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import './css/tailwind.css'
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
 
 const router = createRouter({
-    history: createWebHashHistory(),
+    history: createWebHistory(),
     routes: [
         {
-            path: '/', component: import('./components/views/main.vue')
+            path: '/index', component: () => import('./components/views/main.vue')
         },
         {
-            path: '/Question', component: import('./components/views/question.vue')
+            path: '/Question', component: () => import('./components/views/question.vue')
+        },
+        {
+            path: '/', redirect: '/index'
         }
     ],
     scrollBehavior(to, from, savedPosition) {

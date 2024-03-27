@@ -2,15 +2,15 @@
     <div class = "h-24 py-4 bg-slate-800 flex flex-col justify-between items-center mx-auto">
         <div class="space-x-4 text-white">
             <a class="text-white hover:text-purple-300 duration-300"
-            href="https://www.facebook.com/CCUPCxDS">
+            href="https://www.facebook.com/CCUPCxDS" target="_blank">
                 Facebook
             </a>
             <a class="text-white hover:text-purple-300 duration-300"
-            href="https://www.instagram.com/ccupcxds/">
+            href="https://www.instagram.com/ccupcxds/" target="_blank">
                 Instagram
             </a>
             <a class="text-white hover:text-purple-300 duration-300"
-            href="https://discord.gg/YFK42UuedB">
+            href="https://discord.gg/YFK42UuedB" target="_blank">
                 Discord
             </a>
         </div>

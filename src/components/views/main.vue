@@ -1,8 +1,9 @@
 <template>
     <div>
         <Navbar />
-        <Cover />
-        
+        <div class = "contain">
+            <Cover />
+        </div>
         <Footer />
     </div>
 </template>
