@@ -1,0 +1,10 @@
+version: '1.0'
+
+services:
+    nginx:
+        container_name: nginx
+        image: nginx:latest
+        ports:
+            - "1226:80"
+        volumes:
+            - ./dist:/usr/share/nginx/html
