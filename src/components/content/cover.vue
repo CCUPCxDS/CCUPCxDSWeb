@@ -1,4 +1,11 @@
 <template>
-    <div class = "flex flex-col items-center justify-center h-screen w-full bg-[url(/background.jpg)] bg-cover">
+    <div id = "bg" class = "flex flex-col items-center justify-center w-full overflow-auto">
+        <img src = "/background.jpg" class = "w-full h-full object-cover" />
     </div>
 </template>
+
+<style>
+    #bg {
+        height: calc(100vh - 10rem);
+    }
+</style>

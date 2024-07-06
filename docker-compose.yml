@@ -1,10 +1,10 @@
-version: '1.0'
+version: '3.8'
 
 services:
-    nginx:
-        container_name: nginx
-        image: nginx:latest
-        ports:
-            - "1226:80"
-        volumes:
-            - ./dist:/usr/share/nginx/html
+  web:
+    image: nginx:latest
+    container_name: CCUPCXDS-web
+    ports:
+      - "1346:80"
+    volumes:
+      - ./dist:/usr/share/nginx/html:ro
