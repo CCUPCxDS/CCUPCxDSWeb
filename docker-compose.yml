@@ -8,3 +8,4 @@ services:
       - "1346:80"
     volumes:
       - ./dist:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
