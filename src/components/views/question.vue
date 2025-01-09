@@ -2,11 +2,11 @@
     <div>
         <Navbar />
         <div class="contain flex justify-center flex-col items-center overflow-hidden w-full">
-            <div class = "bg relative w-full flex justify-center flex-col items-center">
+            <div class = "bg relative w-full flex justify-center flex-col items-center pt-6 pb-6">
                 <h1 class = "text-4xl font-bold text-center py-5">
                     常見問題
                 </h1>
-                <div class = "question_block md:rounded-lg rounded-none w-full md:w-[50rem]" v-for = "qa in QuestionAndAnswer">
+                <div class = "question_block md:rounded-lg rounded-none min-h-12 w-full md:w-[50rem]" v-for = "qa in QuestionAndAnswer">
                     <div class = "question text-xl py-3 font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
                         Q: {{qa.question}}
                     </div>
@@ -63,11 +63,11 @@ const QuestionAndAnswer = [
         left: 0;
         right: 0;
         bottom: 0;
-        background-size: 400%;
-        background-image: linear-gradient(45deg, rgb(165, 186, 255), rgb(231, 176, 252), rgb(214, 132, 199), rgb(241, 182, 223)); /* 你的背景漸層 */
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #d59723, #ab23d5);
+	    background-size: 400% 400%;
         filter: blur(2px);
         z-index: -1; /* 確保背景在內容之下 */
-        animation: ani 10s infinite linear;
+        animation: ani 15s ease infinite; /* 背景動畫 */
     }
     @keyframes ani {
         0% {

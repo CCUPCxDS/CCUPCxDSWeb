@@ -6,6 +6,6 @@
 
 <style>
     #bg {
-        height: calc(100vh - 10rem);
+        height: calc(100vh - 6rem);
     }
 </style>

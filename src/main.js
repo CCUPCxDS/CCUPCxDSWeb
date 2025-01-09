@@ -9,9 +9,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import the fontawesome icons you want to use */  
-import { faFacebook, faInstagram, faDiscord } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faInstagram, faDiscord, faLine } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faFacebook, faInstagram, faDiscord)
+library.add(faFacebook, faInstagram, faDiscord, faLine)
 
 const router = createRouter({
     history: createWebHistory(),
