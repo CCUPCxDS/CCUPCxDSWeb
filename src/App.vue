@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import Navbar from '@/components/Navbar.vue'
-import Footer from '@/components/Footer.vue'
-import About from '@/views/About.vue'
-import Cover from '@/views/Cover.vue'
-import Join from '@/views/Join.vue'
-import Contact from '@/views/Contact.vue'
-import QA from '@/views/Qa.vue'
+import Navbar from '@/components/navbar.vue'
+import Footer from '@/components/footer.vue'
+import About from '@/views/about.vue'
+import Cover from '@/views/cover.vue'
+import Join from '@/views/join.vue'
+import Contact from '@/views/contact.vue'
+import QA from '@/views/qa.vue'
 </script>
 
 <template>
