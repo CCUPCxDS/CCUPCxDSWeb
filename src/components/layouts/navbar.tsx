@@ -1,5 +1,5 @@
 import '../../index.css'
-import { DarkModeToggle } from '../DarkModeToggle';
+import { DarkModeToggle } from '@/components/DarkModeToggle';
 
 function Navbar() {
     return (
