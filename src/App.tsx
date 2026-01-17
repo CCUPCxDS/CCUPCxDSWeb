@@ -6,9 +6,9 @@ import Schedule from '@/components/Schedule'
 
 function App() {
   const scrollToContent = () => {
-    const element = document.getElementById('quote-section');
-    element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  };
+    const element = document.getElementById('quote-section')
+    element?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
   return (
     <div className='min-h-screen flex flex-col bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100'>
       <Navbar />

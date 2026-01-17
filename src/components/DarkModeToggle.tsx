@@ -1,7 +1,7 @@
-import { useTheme } from '@/components/hooks/useTheme';
+import { useTheme } from '@/components/hooks/useTheme'
 
 export function DarkModeToggle() {
-  const { theme, toggleTheme } = useTheme();
+  const { theme, toggleTheme } = useTheme()
 
   return (
     <button
@@ -19,5 +19,5 @@ export function DarkModeToggle() {
         </svg>
       )}
     </button>
-  );
+  )
 }

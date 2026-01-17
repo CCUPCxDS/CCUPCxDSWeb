@@ -10,7 +10,7 @@ function Schedule() {
             </div>
             <hr className='mt-12'></hr>
         </>
-    );
+    )
 }
 
-export default Schedule;
+export default Schedule
