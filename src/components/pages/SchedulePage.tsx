@@ -8,7 +8,7 @@ function Schedule() {
         <>
           <hr className='my-6'></hr>
           <div className='text-center flex items-center flex-col my-5 w-full'>
-              <iframe src="https://calendar.google.com/calendar/embed?src=c19faecd118b61d5dbdd0970016e0b41328e60bdca943c0b8405640bc9861500%40group.calendar.google.com&ctz=Asia%2FTaipei" className='rounded-lg w-[80%] md:w-3xl h-128'></iframe>
+              <iframe src="https://calendar.google.com/calendar/embed?src=c19faecd118b61d5dbdd0970016e0b41328e60bdca943c0b8405640bc9861500%40group.calendar.google.com&ctz=Asia%2FTaipei" className='rounded-lg w-[95%] md:w-3xl h-128'></iframe>
           </div>
         </>
     )
