@@ -26,7 +26,7 @@ function WelcomeSection({ onScrollToContent }: WelcomeSectionProps) {
       </div>
       
       {/* Hero Content */}
-      <div className='relative h-full flex items-center justify-center px-6'>
+      <div className='relative h-full flex items-center justify-center px-6 pb-48'>
         <div className='max-w-4xl text-center'>
           <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 drop-shadow-lg'>
             CCUPC × Dream Start
