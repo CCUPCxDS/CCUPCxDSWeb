@@ -1,8 +1,8 @@
 import { useRef } from 'react'
 import '@/index.css'
 
-import Navbar from '@/components/layouts/Navbar'
-import Footer from '@/components/layouts/Footer'
+import Navbar from '@/components/layouts/navbar'
+import Footer from '@/components/layouts/footer'
 
 type WelcomeSectionProps = {
   onScrollToContent: () => void
