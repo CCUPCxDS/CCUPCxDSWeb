@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import '../../index.css'
+import '@/index.css'
 import { useTheme } from '@/components/hooks/useTheme'
 
 export function DarkModeToggle({ className }: { className?: string }) {
@@ -100,7 +100,7 @@ function Navbar({ alwaysSolid = false }: NavbarProps) {
                 fixed top-0 left-0 z-50 h-16 w-full transition-all duration-300 ease-in-out
                 ${
                     shouldApplySolid
-                        ? 'border-blue-500/30 bg-blue-600/90 shadow-lg backdrop-blur-md dark:bg-slate-900/90'
+                        ? 'border-blue-500/30 bg-blue-400/90 shadow-lg backdrop-blur-md dark:bg-slate-900/90'
                         : 'bg-transparent'
                 }
             `}
@@ -169,7 +169,7 @@ function Navbar({ alwaysSolid = false }: NavbarProps) {
                 <div
                     className={`
                         absolute top-0 left-0 flex w-full origin-top transform
-                        flex-col items-center space-y-4 bg-blue-600 px-6 pt-24 pb-8
+                        flex-col items-center space-y-4 bg-blue-400 px-6 pt-24 pb-8
                         shadow-xl transition-all duration-300 ease-in-out md:hidden dark:bg-slate-900
                         ${isMenuOpen ? 'pointer-events-auto translate-y-0 opacity-100' : 'pointer-events-none -translate-y-full opacity-0'}
                     `}

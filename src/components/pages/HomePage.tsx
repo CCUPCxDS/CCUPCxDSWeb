@@ -1,5 +1,7 @@
 import { useRef } from 'react'
 import '@/index.css'
+import CoverImage from '@/assets/Cover.jpg'
+import LogoImage from '@/assets/logo.png'
 
 import Navbar from '@/components/layouts/navbar'
 import Footer from '@/components/layouts/footer'
@@ -19,7 +21,7 @@ function WelcomeSection({ onScrollToContent }: WelcomeSectionProps) {
             <div className='absolute inset-0'>
                 <img
                     className='h-full w-full object-cover'
-                    src='/Cover.jpg'
+                    src={CoverImage}
                     alt='CCUPC x DS Logo'
                 />
                 <div className='absolute inset-0 bg-linear-to-b from-black/40 via-black/20 to-white dark:to-gray-950'></div>
@@ -65,7 +67,7 @@ function QuoteSection() {
         <section id='quote-section' className='px-6 py-20'>
             <div className='mx-auto max-w-4xl'>
                 <blockquote className='text-center'>
-                    <p className='mb-6 text-2xl leading-relaxed font-medium text-blue-600 md:text-3xl dark:text-blue-400'>
+                    <p className='mb-6 text-2xl leading-relaxed font-medium text-blue-400 md:text-3xl'>
                         如果文字是組成故事的地基，
                         <br className='hidden md:block' />
                         程式就是推動世界的齒輪。
@@ -79,15 +81,15 @@ function QuoteSection() {
     )
 }
 
-function ShortIntroSection({ sectionRef }: QuoteSectionProps ) {
+function ShortIntroSection({ sectionRef }: QuoteSectionProps) {
     return (
-        <section className='my-12' ref={sectionRef} >
+        <section className='my-12' ref={sectionRef}>
             <div className='container mx-auto max-w-6xl px-8 md:px-12'>
                 <div className='flex flex-col items-center gap-12 md:flex-row'>
                     <div className='group relative shrink-0'>
                         <div className='absolute -inset-1 rounded-full bg-linear-to-r from-blue-600 to-cyan-400 opacity-25 blur transition duration-200 group-hover:opacity-50'></div>
                         <img
-                            src='/logo.png'
+                            src={LogoImage}
                             alt='CCUPC Logo'
                             className='relative h-64 w-64 rounded-xl object-contain drop-shadow-xl'
                         />
@@ -96,7 +98,7 @@ function ShortIntroSection({ sectionRef }: QuoteSectionProps ) {
                     <div className='text-center md:text-left'>
                         <h2 className='mb-6 text-3xl font-bold text-gray-900 md:text-4xl dark:text-white'>
                             何謂{' '}
-                            <span className='text-blue-600 dark:text-blue-400'>
+                            <span className='bg-linear-to-r from-teal-500 to-blue-600 bg-clip-text text-transparent dark:from-teal-400 dark:to-blue-400'>
                                 中正競程
                             </span>
                             ？
@@ -104,7 +106,7 @@ function ShortIntroSection({ sectionRef }: QuoteSectionProps ) {
 
                         <div className='space-y-4 text-lg leading-relaxed text-gray-600 dark:text-gray-300'>
                             <p>
-                                中正大學競技程式隊（CCUPC）是隸屬於中正大學資工系的學生組織，
+                                中正大學競技程式隊（CCUPC）是隸屬於中正大學資工系的社群組織，
                                 <strong className='font-medium text-gray-900 dark:text-white'>
                                     歡迎來自各系所年級
                                 </strong>
@@ -150,7 +152,7 @@ function HomePage() {
             <WelcomeSection onScrollToContent={scrollToContent} />
             <div className='bg-linear-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-700'>
                 <ShortIntroSection sectionRef={quoteRef} />
-                <QuoteSection  />
+                <QuoteSection />
             </div>
 
             <Footer />
