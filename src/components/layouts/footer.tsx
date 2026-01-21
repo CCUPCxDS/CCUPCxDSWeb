@@ -19,13 +19,12 @@ function Footer() {
     // ]
 
     return (
-        <div className="w-full h-16 justify-center bg-blue-600/90 dark:bg-slate-900/90 flex items-center px-6">
+        <div className='flex h-16 w-full items-center justify-center bg-blue-600/90 px-6 dark:bg-slate-900/90'>
             <div className='flex'>
-                <p className="text-sm text-white/90">
+                <p className='text-sm text-white/90'>
                     &copy; {currentYear} CCUPC × Dream Start.
                 </p>
             </div>
-            
         </div>
     )
 }
